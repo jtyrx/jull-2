@@ -1,6 +1,6 @@
 {
   "name": "hull",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "scripts": {
     "dev": "cross-env NODE_ENV=development next dev",
     "build": "echo 'Building Sanity to public/studio…' && cd studio && npx sanity build ../public/studio -y && cd .. && next build",
@@ -8,13 +8,10 @@
     "analyze": "cross-env ANALYZE=true next build",
     "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
     "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build",
-    "postinstall": "cd studio && npm install"
+    "postinstall": "cd studio && yarn"
   },
   "sideEffects": false,
   "license": "MIT",
-  "engines": {
-    "node": "14.x"
-  },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.25",
     "@reach/rect": "^0.16.0",
